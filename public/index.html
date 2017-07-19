@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timestamp Microservice</title>
+</head>
+<body>
+
+    <h1> Timestamp Microservice </h1>
+
+    <h2> Usage: </h2>
+
+    <p>Append "natural date" to the root https://domain/&lt;naturaldate&gt; and receive a unix timestamp</p>
+    <p>Append "unix timestamp" to the root https://domain/&lt;timestamp&gt; and receive a natural date</p>
+
+    <h3> Example: </h3>
+    <p>
+        https://domain/December 15, 2015
+        <br/>
+        https://domain/1450166400
+    </p>
+
+    <h3> Result: </h3>
+    <p>{ "unix": 1450166400, "natural": "Tue Dec 15 2015" }</p>
+
+</body>
+</html>
